@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (uses network!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	SNPP
+%define		pdir	Net
+%define		pnam	SNPP
 Summary:	Net::SNPP perl module
 Summary(pl):	Modu³ Perla Net::SNPP
 Name:		perl-Net-SNPP
