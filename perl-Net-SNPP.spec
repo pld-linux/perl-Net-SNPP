@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (uses network!)
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	SNPP
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla Net::SNPP
 Name:		perl-Net-SNPP
 Version:	1.14
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/DREDD/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e5e36c9c8c83e70c4cf769abd58397a0
@@ -29,10 +34,13 @@ Net::SNPP - interfejs perla do SNPP.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
