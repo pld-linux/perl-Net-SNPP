@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	SNPP
 Summary:	Net::SNPP perl module
-Summary(pl):	Modu³ perla Net::SNPP
+Summary(pl):	Modu³ Perla Net::SNPP
 Name:		perl-Net-SNPP
 Version:	1.14
 Release:	1
@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Net::SNPP - Perl interface to SNPP.
 
 %description -l pl
-Net::SNPP - interfejs perla do SNPP.
+Net::SNPP - interfejs Perla do SNPP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
