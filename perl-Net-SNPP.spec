@@ -8,13 +8,13 @@
 Summary:	Net::SNPP perl module
 Summary(pl):	Modu³ Perla Net::SNPP
 Name:		perl-Net-SNPP
-Version:	1.14
+Version:	1.17
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e5e36c9c8c83e70c4cf769abd58397a0
+# Source0-md5:	18f61a774906cd27ca14dcbf311e6bf0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
