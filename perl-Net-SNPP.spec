@@ -26,7 +26,7 @@ Net::SNPP - interfejs perla do SNPP.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
