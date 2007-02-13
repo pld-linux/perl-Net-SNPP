@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SNPP
 Summary:	Net::SNPP perl module
-Summary(pl.UTF-8):   Moduł Perla Net::SNPP
+Summary(pl.UTF-8):	Moduł Perla Net::SNPP
 Name:		perl-Net-SNPP
 Version:	1.17
 Release:	1
