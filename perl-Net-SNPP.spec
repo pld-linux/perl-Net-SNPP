@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (uses network!)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	SNPP
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::SNPP perl module
 Summary(pl.UTF-8):	Moduł Perla Net::SNPP
 Name:		perl-Net-SNPP
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	18f61a774906cd27ca14dcbf311e6bf0
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Net-SNPP/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
