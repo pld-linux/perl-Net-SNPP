@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	SNPP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::SNPP perl module
 Summary(pl.UTF-8):	Moduł Perla Net::SNPP
 Name:		perl-Net-SNPP
